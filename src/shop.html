@@ -13,8 +13,8 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light">
-      <div class="container-lg">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
         <a href="./index.html" class="" navbar-brand>
           <span class="fw-bold text-secondary">
             <img
@@ -537,50 +537,6 @@
         </div>
       </section>
     </footer>
-    <script>
-      document.querySelectorAll(".addItemBtn").forEach((button) => {
-        button.addEventListener("click", function (event) {
-          const cartToast = new bootstrap.Toast(
-            document.getElementById("cartToast")
-          );
-          cartToast.show();
-
-          // Position the toast near the button
-          positionToastNearButton(
-            event.target,
-            document.getElementById("cartToast")
-          );
-        });
-      });
-
-      function positionToastNearButton(button, toast) {
-        const buttonRect = button.getBoundingClientRect();
-        const toastRect = toast.getBoundingClientRect();
-
-        const edgePadding = 20; // pixels for padding from the edge
-        let top =
-          window.scrollY + buttonRect.top + buttonRect.height + edgePadding;
-        let left =
-          window.scrollX +
-          buttonRect.left -
-          toastRect.width / 2 +
-          buttonRect.width / 2;
-
-        // Ensure the toast doesn't go off the right edge of the viewport
-        left = Math.min(
-          left,
-          window.innerWidth - toastRect.width - edgePadding
-        );
-
-        // Ensure the toast doesn't go off the left edge of the viewport
-        left = Math.max(left, edgePadding);
-
-        // Set the position
-        toast.style.position = "absolute";
-        toast.style.top = `${top}px`;
-        toast.style.left = `${left}px`;
-      }
-    </script>
     <script src="./bundle.js"></script>
   </body>
 </html>

@@ -22,6 +22,7 @@ import { getAnalytics } from "firebase/analytics";
 // import { initializeAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
 import { getFirestore, serverTimestamp } from "firebase/firestore";
 import emailjs from "@emailjs/browser";
+import { Toast } from "bootstrap";
 import {
   getAuth,
   connectAuthEmulator,
@@ -445,4 +446,48 @@ function getOrderDetails() {
   });
 
   return { details, totalCost: totalCost.toFixed(2) };
+}
+
+//toast logic **
+document.querySelectorAll(".addItemBtn").forEach((button) => {
+  button.addEventListener("click", function (event) {
+    const cartToast = new Toast(
+      document.getElementById("cartToast")
+    );
+    cartToast.show();
+
+    // Position the toast near the button
+    positionToastNearButton(
+      event.target,
+      document.getElementById("cartToast")
+    );
+  });
+});
+
+function positionToastNearButton(button, toast) {
+  const buttonRect = button.getBoundingClientRect();
+  const toastRect = toast.getBoundingClientRect();
+
+  const edgePadding = 20; // pixels for padding from the edge
+  let top =
+    window.scrollY + buttonRect.top + buttonRect.height + edgePadding;
+  let left =
+    window.scrollX +
+    buttonRect.left -
+    toastRect.width / 2 +
+    buttonRect.width / 2;
+
+  // Ensure the toast doesn't go off the right edge of the viewport
+  left = Math.min(
+    left,
+    window.innerWidth - toastRect.width - edgePadding
+  );
+
+  // Ensure the toast doesn't go off the left edge of the viewport
+  left = Math.max(left, edgePadding);
+
+  // Set the position
+  toast.style.position = "absolute";
+  toast.style.top = `${top}px`;
+  toast.style.left = `${left}px`;
 }

@@ -5,8 +5,7 @@ import emailjs from "@emailjs/browser";
 
 
 // Clock/Misc UI
-export const toolTips = document.querySelectorAll(".tt");
-export const clock = document.querySelector(".clock");
+const clock = document.querySelector(".clock");
 
 // Email JS
 emailjs.init("teumzvK_dd_tm2EDs");
@@ -27,16 +26,20 @@ export const showLoginState = (user) => {
   lblAuthState.innerHTML = `You're logged in as ${user.displayName} (uid: ${user.uid}, email: ${user.email}) `;
 };
 
-// *** Toast Logic ***
- document.querySelectorAll(".toast").forEach((toastEl) => {
-   const toast = new Toast(toastEl);
-   toast.show();
- });
+  // Toast Logic
+  const toast = document.querySelectorAll(".toast").forEach((toastEl) => {
+    // Using named import approach
+    const toast = new Toast(toastEl);
+    toast.show();
+  });
 
-// *** Clock Logic***
-toolTips.forEach((t) => {
-  new Tooltip(t);
-});
+  // *** Clock Logic***
+  const toolTips = document.querySelectorAll('.tt');
+  toolTips.forEach((t) => {
+    new Tooltip(t);
+  });
+
+
 
 // Function to add ordinal suffix to a number
 function addOrdinalSuffix(date) {
@@ -160,3 +163,18 @@ function sendMail() {
     })
     .catch((err) => console.log(err));
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  const purchaseStatus = urlParams.get("purchase");
+
+  if (purchaseStatus === "success") {
+    // Remove the query string to prevent the toast from appearing on page refresh
+    window.history.replaceState(null, null, window.location.pathname);
+    const purchaseToastEl = document.getElementById("purchaseToast");
+    if (purchaseToastEl) {
+      const purchaseToast = new Toast(purchaseToastEl);
+      purchaseToast.show();
+    }
+  }
+});
