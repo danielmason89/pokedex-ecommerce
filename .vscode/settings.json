@@ -9,6 +9,7 @@
         "fullname",
         "loginbtn",
         "Pokedex",
+        "popperjs",
         "signup"
     ],
     "liveServer.settings.port": 5501
