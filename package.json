@@ -20,6 +20,7 @@
   "homepage": "https://github.com/danielmason89/pokedex-ecommerce#readme",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.1",
     "date-fns": "^2.30.0",
