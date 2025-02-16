@@ -1,3 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import "./css/main.min.css";
+import "./css/style.css";
+import $ from 'jquery';
+
 import {
   loginButton,
   logoutButton,
@@ -8,9 +15,6 @@ import {
   formLoginBtn,
   formSignupBtn,
 } from "./ui";
-import "bootstrap/scss/bootstrap.scss";
-import "./css/main.min.css";
-import "./css/style.css";
 import addCart from "./addCart.js";
 import { renderCart } from "./shoppingCart.js";
 import { initializeApp } from "firebase/app";

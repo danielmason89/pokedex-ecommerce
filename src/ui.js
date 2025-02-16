@@ -1,5 +1,7 @@
 import { AuthErrorCodes } from "firebase/auth";
 import { format } from "date-fns";
+import { Toast, Tooltip } from "bootstrap";
+
 
 // Clock/Misc UI
 export const toolTips = document.querySelectorAll(".tt");
@@ -24,9 +26,15 @@ export const showLoginState = (user) => {
   lblAuthState.innerHTML = `You're logged in as ${user.displayName} (uid: ${user.uid}, email: ${user.email}) `;
 };
 
+// *** Toast Logic ***
+ document.querySelectorAll(".toast").forEach((toastEl) => {
+   const toast = new Toast(toastEl);
+   toast.show();
+ });
+
 // *** Clock Logic***
 toolTips.forEach((t) => {
-  new bootstrap.Tooltip(t);
+  new Tooltip(t);
 });
 
 // Function to add ordinal suffix to a number

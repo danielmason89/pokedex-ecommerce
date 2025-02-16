@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import { renderCart } from "./shoppingCart";
 
 export default function addCart() {
