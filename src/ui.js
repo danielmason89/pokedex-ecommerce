@@ -1,6 +1,7 @@
 import { AuthErrorCodes } from "firebase/auth";
 import { format } from "date-fns";
 import { Toast, Tooltip } from "bootstrap";
+import emailjs from "@emailjs/browser";
 
 
 // Clock/Misc UI
