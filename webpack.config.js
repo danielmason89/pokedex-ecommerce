@@ -22,12 +22,12 @@ let config = {
     // },
   },
   entry: {
-    main: path.resolve(__dirname, "src/index.js"),
+    main: path.resolve(__dirname, "./src/index.js"),
   },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    // clean: true,
+    clean: true,
     publicPath: "/",
   },
   devtool: "inline-source-map",
@@ -43,6 +43,18 @@ let config = {
         },
       },
       // *** HTML ***
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      // *** Images/Assets ***
+      {
+        test: /\.(svg|ico|png|jpg|jpeg)$/i,
+        type: "asset/resource",
+        generator: { 
+          filename: "assets/[name][ext]",
+        },
+      },
       // *** CSS ***
       {
         test: /\.css$/i,
@@ -52,11 +64,6 @@ let config = {
       {
         test: /\.(scss|sass)$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
-      },
-      // *** Images/Assets ***
-      {
-        test: /\.(svg|ico|png|webp|jpg|gif|jpeg)$/i,
-        type: "asset/resource",
       },
     ],
   },
