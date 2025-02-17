@@ -6,6 +6,9 @@ on:
   push:
     branches:
       - main
+permissions:
+  checks: write
+  contents: write
 jobs:
   build_and_deploy:
     concurrency:
