@@ -21,7 +21,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '20'
       - name: Cache node modules
         uses: actions/cache@v3
         with:
@@ -35,7 +35,7 @@ jobs:
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: ${{ secrets.FIREBASE_TOKEN }}
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_TOKEN }}
           channelId: live
           projectId: pokedex-shop-app
