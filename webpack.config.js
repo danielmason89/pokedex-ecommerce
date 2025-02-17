@@ -49,7 +49,7 @@ let config = {
       },
       // *** Images/Assets ***
       {
-        test: /\.(svg|ico|png|jpg|jpeg)$/i,
+        test: /\.(svg|ico|png|jpg|jpeg)$/,
         type: "asset/resource",
         generator: { 
           filename: "assets/[name][ext]",
