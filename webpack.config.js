@@ -43,11 +43,6 @@ let config = {
         },
       },
       // *** HTML ***
-      // {
-      //   test: /\.html$/,
-      //   exclude: /node-modules/,
-      //   use: ["html-loader"],
-      // },
       // *** CSS ***
       {
         test: /\.css$/i,
@@ -55,8 +50,8 @@ let config = {
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
-        test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        test: /\.(scss|sass)$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       // *** Images/Assets ***
       {

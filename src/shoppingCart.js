@@ -1,4 +1,5 @@
 import { updateCartTotal } from "./updateCartTotal";
+import $ from 'jquery';
 
 export function renderCart() {
   let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];

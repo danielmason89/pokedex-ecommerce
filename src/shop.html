@@ -10,26 +10,11 @@
       href="./assets/pngwing.com.png"
     />
     <title>Pokedex - Shop</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("teumzvK_dd_tm2EDs");
-      })();
-    </script>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light">
-      <div class="container-lg">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
         <a href="./index.html" class="" navbar-brand>
           <span class="fw-bold text-secondary">
             <img
@@ -552,60 +537,6 @@
         </div>
       </section>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      document.querySelectorAll(".addItemBtn").forEach((button) => {
-        button.addEventListener("click", function (event) {
-          const cartToast = new bootstrap.Toast(
-            document.getElementById("cartToast")
-          );
-          cartToast.show();
-
-          // Position the toast near the button
-          positionToastNearButton(
-            event.target,
-            document.getElementById("cartToast")
-          );
-        });
-      });
-
-      function positionToastNearButton(button, toast) {
-        const buttonRect = button.getBoundingClientRect();
-        const toastRect = toast.getBoundingClientRect();
-
-        const edgePadding = 20; // pixels for padding from the edge
-        let top =
-          window.scrollY + buttonRect.top + buttonRect.height + edgePadding;
-        let left =
-          window.scrollX +
-          buttonRect.left -
-          toastRect.width / 2 +
-          buttonRect.width / 2;
-
-        // Ensure the toast doesn't go off the right edge of the viewport
-        left = Math.min(
-          left,
-          window.innerWidth - toastRect.width - edgePadding
-        );
-
-        // Ensure the toast doesn't go off the left edge of the viewport
-        left = Math.max(left, edgePadding);
-
-        // Set the position
-        toast.style.position = "absolute";
-        toast.style.top = `${top}px`;
-        toast.style.left = `${left}px`;
-      }
-    </script>
     <script src="./bundle.js"></script>
   </body>
 </html>

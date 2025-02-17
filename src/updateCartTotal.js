@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 export function updateCartTotal(cartItems) {
   if (cartItems.length === 0) {
     // If there are no items in the cart, display nothing or 0
