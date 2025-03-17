@@ -22,9 +22,9 @@
 <br />
 <div align="center">
 
-# Pokedex
+# Pokédex - ECommerce Storefront  
 
-### 🚀 About the Project 🚀
+### 📱 About the Project 📱
 
   <div align="center">
     <p>An Apple-style inspired eCommerce store in the vein of Pokémon, selling Pokedex in the same vein as iPhones.</p>
@@ -40,7 +40,7 @@
   </p>
 </div>
 
-[![Product Name Screen Shot][product-screenshot]](https://curr-games.onrender.com/)
+[![Product Name Screen Shot][product-screenshot]](https://pokedex-shop-app.web.app/)
 
 [product-screenshot]: https://media.licdn.com/dms/image/v2/D4E2DAQEDCsnJwm4ZNg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1718855069526?e=1742187600&v=beta&t=MiXrctEdmtWF6BqZDb17haW02c2DCQWXJZP98J04eYY
 
@@ -68,29 +68,19 @@
 
 ## Built With
 
-- [![React][React.js]][React-url]
-- [![React Router][React Router]][React Router-url]
-- [![Motion][Motion]][Motion-url]
 - [![TypeScript][TypeScript]][TypeScript-url]
 - [![Vite][Vite]][Vite-url]
-- [![Redux][Redux]][Redux-url]
 - [![Axios][Axios]][Axios-url]
-- [![Styled Components][Styled Components]][Styled Components-url]
 - [![Cors][Cors]][Cors-url]
 - [![Cookie-Parser][Cookie-Parser]][Cookie-Parser-url]
 - [![tsx][tsx]][tsx-url]
 - [![ViteExpress][ViteExpress]][ViteExpress-url]
-- [![web-vitals][web-vitals]][web-vitals-url]
-- [![Zod][Zod]][Zod-url]
 - [![Nodemon][Nodemon]][Nodemon-url]
 - [![Prettier][Prettier]][Prettier-url]
 - [![TypeScriptEslint][TypeScriptEslint]][typescript-eslint-url]
 - [![Express][Express]][Express-url]
-- [![react-icons][react-icons]][react-icons-url]
-- [![react-redux][react-redux]][react-redux-url]
 - [![cross-env][cross-env]][cross-env-url]
 - [![dotenv][dotenv]][dotenv-url]
-- [![Render][Render]][Render-url]
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -113,7 +103,7 @@
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/danielmason89/curr-games.git
+   git clone https://github.com/danielmason89/pokedex-ecommerce.git
    ```
 
 2. Install NPM packages
@@ -130,7 +120,7 @@
    npm run dev
    ```
 
-5. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+5. Open [http://localhost:8081](http://localhost:8081) to view it in the browser.
 <br/>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -139,7 +129,7 @@
 
 ## Contribute
 
-Curr🔥games is an open-source project and we welcome contributions from the community.
+Pokédex is an open-source project and we welcome contributions from the community.
 
 If you'd like to contribute and a suggestion that would make this app better, please fork the repository to make change and contact us. As all pull requests are warmly welcomed.
 You can also simply open an issue with the tag "enhancement".
@@ -159,8 +149,6 @@ You can also simply open an issue with the tag "enhancement".
 <div>
   <img src="https://avatars.githubusercontent.com/u/77700361?v=4" width="100" height="100" />
   <p>Daniel Mason</p>
-  <img src="https://avatars.githubusercontent.com/u/43054519?v=4" width="100" height="100" />
-  <p>Lucas Winkler</p>
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -169,67 +157,45 @@ You can also simply open an issue with the tag "enhancement".
 
 ## Acknowledgments
 
-- [React](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Motion](https://motion.dev/)
 - [Axios](https://axios-http.com/)
-- [Redux](https://redux.js.org/)
-- [Styled Components](https://styled-components.com/)
 - [Vite](https://vite.dev/)
 - [Cors](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-- [React Router Dom](https://www.npmjs.com/package/react-router-dom)
 - [Cookie-Parser](https://www.npmjs.com/package/cookie-parser)
 - [tsx](https://www.npmjs.com/package/tsx)
 - [Vite Express](https://www.npmjs.com/package/vite-express)
 - [web-vitals](https://www.npmjs.com/package/web-vitals)
-- [Zod](https://zod.dev/)
 - [Nodemon](https://nodemon.io/)
 - [Prettier](https://prettier.io/)
 - [TypeScript Eslint](https://typescript-eslint.io/)
 - [Express](https://expressjs.com/)
-- [react-icons](https://react-icons.github.io/react-icons/)
-- [react-redux](https://react-redux.js.org/)
 - [cross-env](https://www.npmjs.com/package/cross-env)
 - [dotenv](https://www.npmjs.com/package/dotenv)
-- [Render](https://render.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/danielmason89/curr-games.svg?style=for-the-badge
-[contributors-url]: https://github.com/danielmason89/curr-games/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/danielmason89/curr-games.svg?style=for-the-badge
-[forks-url]: https://github.com/danielmason89/curr-games/network/members
-[stars-shield]: https://img.shields.io/github/stars/danielmason89/curr-games.svg?style=for-the-badge
-[stars-url]: https://github.com/danielmason89/curr-games/stargazers
-[issues-shield]: https://img.shields.io/github/issues/danielmason89/curr-games.svg?style=for-the-badge
-[issues-url]: https://github.com/danielmason89/curr-games/issues
+[contributors-shield]: https://img.shields.io/github/contributors/danielmason89/pokedex-ecommerce.svg?style=for-the-badge
+[contributors-url]: https://github.com/danielmason89/pokedex-ecommerce/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/danielmason89/pokedex-ecommerce.svg?style=for-the-badge
+[forks-url]: https://github.com/danielmason89/pokedex-ecommerce/network/members
+[stars-shield]: https://img.shields.io/github/stars/danielmason89/pokedex-ecommerce.svg?style=for-the-badge
+[stars-url]: https://github.com/danielmason89/pokedex-ecommerce/stargazers
+[issues-shield]: https://img.shields.io/github/issues/danielmason89/pokedex-ecommerce.svg?style=for-the-badge
+[issues-url]: https://github.com/danielmason89/pokedex-ecommerce/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/daniel-mason-dev/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
 [TypeScript]: https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff
 [TypeScript-url]: https://www.typescriptlang.org/
-[React Router]: https://img.shields.io/badge/React%20Router-CA4245?logo=reactrouter&logoColor=fff&style=flat
-[React Router-url]: https://reactrouter.com/
 [Vite]: https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff&style=flat
 [Vite-url]: https://vite.dev/
-[Motion]: https://img.shields.io/badge/Framer-05F?logo=framer&logoColor=fff&style=flat
-[Motion-url]: https://motion.dev/
-[Vite]: https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff&style=flat
-[Vite-url]: https://vite.dev/
-[Redux]: https://img.shields.io/badge/Redux-764ABC?logo=redux&logoColor=fff&style=flat
-[Redux-url]: https://redux.js.org/
 [Axios]: https://img.shields.io/badge/Axios-5A29E4?logo=axios&logoColor=fff&style=flat
 [Axios-url]: https://axios-http.com/
-[Styled Components]: https://img.shields.io/badge/styled--components-DB7093?logo=styledcomponents&logoColor=fff&style=flat
-[Styled Components-url]: https://styled-components.com/
 [Cors]: https://img.shields.io/badge/Cors-00C7B7?logoColor=fff&style=flat
 [Cors-url]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-[react-router-dom]: https://img.shields.io/badge/react-router-dom-00C7B7?logoColor=fff&style=flat
-[react-router-dom-url]: https://www.npmjs.com/package/react-router-dom
 [Cookie-Parser]: https://img.shields.io/badge/cookie-parser-00C7B7?logoColor=fff&style=flat
 [Cookie-Parser-url]: https://www.npmjs.com/package/cookie-parser
 [tsx]: https://img.shields.io/badge/tsx-00C7B7?logoColor=fff&style=flat
@@ -238,8 +204,6 @@ You can also simply open an issue with the tag "enhancement".
 [ViteExpress-url]: https://www.npmjs.com/package/vite-express
 [web-vitals]: https://img.shields.io/badge/web-vitals-00C7B7?logoColor=fff&style=flat
 [web-vitals-url]: https://www.npmjs.com/package/web-vitals
-[Zod]: https://img.shields.io/badge/Zod-3E67B1?logoColor=fff&style=flat
-[Zod-url]: https://zod.dev/
 [Nodemon]: https://img.shields.io/badge/Nodemon-76D04B?logoColor=fff&style=flat
 [Nodemon-url]: https://nodemon.io/
 [Prettier]: https://img.shields.io/badge/Prettier-F7B93E?logoColor=fff&style=flat
@@ -248,13 +212,7 @@ You can also simply open an issue with the tag "enhancement".
 [typescript-eslint-url]: https://typescript-eslint.io/
 [Express]: https://img.shields.io/badge/Express-000000?logoColor=fff&style=flat
 [Express-url]: https://expressjs.com/
-[react-icons]: https://img.shields.io/badge/react-icons-61DAFB?logoColor=fff&style=flat
-[react-icons-url]: https://react-icons.github.io/react-icons/
-[react-redux]: https://img.shields.io/badge/react-redux-764ABC?logoColor=fff&style=flat
-[react-redux-url]: https://react-redux.js.org/
 [cross-env]: https://img.shields.io/badge/cross-env-ECD53F?logoColor=fff&style=flat
 [cross-env-url]: https://www.npmjs.com/package/cross-env
 [dotenv]: https://img.shields.io/badge/dotenv-ECD53F?logoColor=fff&style=flat
 [dotenv-url]: https://www.npmjs.com/package/dotenv
-[Render]: https://img.shields.io/badge/Render-000000?logoColor=fff&style=flat
-[Render-url]: https://render.com/
