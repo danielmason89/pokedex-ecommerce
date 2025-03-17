@@ -42,7 +42,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://pokedex-shop-app.web.app/)
 
-[product-screenshot]: https://media.licdn.com/dms/image/v2/D4E2DAQEDCsnJwm4ZNg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1718855069526?e=1742187600&v=beta&t=MiXrctEdmtWF6BqZDb17haW02c2DCQWXJZP98J04eYY
+[product-screenshot]: https://media.licdn.com/dms/image/v2/D4E2DAQGkiJY0jOsWnw/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1701562861235?e=1742788800&v=beta&t=ClhAZYMsStMsKlZk3jv2te0IpfTEPrXyHZmnzMBWlzc
 
 <!-- TABLE OF CONTENTS -->
 <details>
